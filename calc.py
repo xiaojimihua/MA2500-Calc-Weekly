@@ -50,7 +50,7 @@ def main():
         print(close_today)
         #
         if(close_today<=MAdiv):
-            tilt="今日沪指低于÷1.2线"
+            tilt="金乖乖时间"
         else:
             if(close_today<=MA2500):
                 judge="÷1.2"
@@ -58,11 +58,11 @@ def main():
                 judge="MA2500"
             else:
                 judge="*1.2"
-            tilt="今日沪指高于"+judge+"线"
+            tilt="银乖乖时间"
         print(tilt)
         #GENERATE TITLE
         # 斜杠用来代码换行
-        cont="今日沪指收盘: "+str(close_today)+"\n今日MA2500数据 \n\t *1.2: "+str(MAmul)+"\n\t 均："+str(MA2500)+"\n\t /1.2: "+str(MAdiv)
+        cont="今日SH收盘: "+str(close_today)+"\n今日猫猫数据 \n\t *1.2: "+str(MAmul)+"\n\t 均："+str(MA2500)+"\n\t /1.2: "+str(MAdiv)
         test_out = cont.replace('\n','\n\n')
         print(cont)
         send_server(tilt,cont) #插入在需要推送的地方，我这里的"Her said"是我的标题，msg是我前面爬取的消息'''
